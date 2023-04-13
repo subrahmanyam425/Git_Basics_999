@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: Building a docker image
+        run: docker build .
+      
+      - name: Listing files
+        run: |
+          ls -R ./.github
+          pwd
