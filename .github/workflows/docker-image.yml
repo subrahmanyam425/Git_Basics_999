@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile --tag subbutest/nodetest:$(date +%s)
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/imagethroughgitactions
+      run: docker push ${{secrets.DOCKER_USER}}/Git_Basics_999
