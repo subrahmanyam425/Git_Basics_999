@@ -22,11 +22,12 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag imagethroughgitactions
-      
-    - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/imagethroughgitactions
-    
     - name: listing
       run: |
         pwd
         ls -l
+      
+    - name: Docker Push
+      run: docker push ${{secrets.DOCKER_USER}}/imagethroughgitactions
+    
+    
