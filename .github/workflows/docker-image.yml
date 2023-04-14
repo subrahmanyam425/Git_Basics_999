@@ -25,7 +25,7 @@ jobs:
     - name: listing
       run: |
         pwd
-        ls -R ./Git_Basics_999
+        ls -la Git_Basics_999
       
     - name: Docker Push
       run: docker push ${{secrets.DOCKER_USER}}/imagethroughgitactions
