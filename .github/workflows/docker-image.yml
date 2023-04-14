@@ -30,6 +30,6 @@ jobs:
         pwd
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/imagethroughgitactions
+      run: docker push ${{secrets.DOCKER_USER}}/imagethroughgitactions/subbuimage:latest
     
     
