@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build -t imagethroughgitactions:latest .
+      run: docker build -t ${{secrets.DOCKER_USER}}/imagethroughgitactions:latest .
 
     - name: listing
       run: |
