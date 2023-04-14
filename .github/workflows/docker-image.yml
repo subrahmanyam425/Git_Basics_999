@@ -27,6 +27,7 @@ jobs:
       run: |
         pwd
         ls -la /home/runner/work/Git_Basics_999/Git_Basics_999
+        pwd
       
     - name: Docker Push
       run: docker push ${{secrets.DOCKER_USER}}/imagethroughgitactions
