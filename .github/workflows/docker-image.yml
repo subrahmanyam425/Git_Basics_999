@@ -25,7 +25,7 @@ jobs:
     - name: listing
       run: |
         pwd
-        ls -la /home/runner/work/Git_Basics_999/Git_Basics_999
+        ls -la /home/runner/work/Git_Basics_999/Git_Basics_999 | grep -i subbu
       
     - name: Docker Push
       run: docker push ${{secrets.DOCKER_USER}}/imagethroughgitactions
