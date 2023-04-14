@@ -25,3 +25,8 @@ jobs:
       
     - name: Docker Push
       run: docker push ${{secrets.DOCKER_USER}}/imagethroughgitactions
+    
+    - name: listing
+      run: |
+        pwd
+        ls -l
